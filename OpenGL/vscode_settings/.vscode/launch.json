@@ -22,7 +22,7 @@
             "environment": [],
             "externalConsole": true,
             "MIMode": "lldb",
-            "preLaunchTask": "build"
+            "preLaunchTask": "build & run active file"
         }
     ]
 }
