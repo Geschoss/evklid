@@ -2,10 +2,14 @@
     "configurations": [
         {
             "name": "Mac",
-            "includePath": ["${workspaceFolder}/**", "/usr/local/include"],
+            "includePath": [
+                "/usr/local/lib",
+                "/usr/local/include"
+            ],
             "defines": [],
             "macFrameworkPath": [
-                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks"
+                "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks",
+                "/usr/local/lib"
             ],
             "compilerPath": "/usr/bin/clang",
             "cStandard": "c11",

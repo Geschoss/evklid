@@ -13,10 +13,11 @@
 
                 "${workspaceFolder}/src/*.cpp",
 
-                "-I/usr/local/include/GLFW",
+                "-I/usr/local/include",
                 "-L/usr/local/lib",
                 "-lglfw",
                 "-lglew",
+                "-lvulkan",
                 "-framework",
                 "Cocoa",
                 "-framework",
