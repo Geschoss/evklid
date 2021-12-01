@@ -7,7 +7,7 @@
 // GLFW
 #include <GLFW/glfw3.h>
 
-#include "render.hpp"
+#include "render.h"
 
 // Window dimensions
 const GLint WIDTH = 800, HEIGHT = 600;

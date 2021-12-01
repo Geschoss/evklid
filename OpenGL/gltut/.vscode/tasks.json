@@ -1,0 +1,60 @@
+{
+    "version": "2.0.0",
+    "tasks": [
+        {
+            "type": "shell",
+            "label": "build active file",
+            "command": "/usr/bin/g++",
+            "args": [
+                "-g",
+                "--std=c++17",
+                "${workspaceFolder}/src/*.cpp",
+                
+                "-o",
+                "${workspaceFolder}/build/${fileBasenameNoExtension}",
+
+                "-I/usr/local/include/GLFW",
+                "-L/usr/local/lib",
+                "-lglfw",
+                "-lglew",
+                "-framework",
+                "Cocoa",
+                "-framework",
+                "OpenGL",
+                "-framework",
+                "IOKit",
+                "-framework",
+                "CoreVideo",
+                "-framework",
+                "GLUT"
+            ],
+            "options": {
+                "cwd": "${workspaceFolder}"
+            },
+            "problemMatcher": ["$gcc"]
+        },
+        {
+            "type": "shell",
+            "label": "run active file",
+            "command": "./${fileBasenameNoExtension}",
+            "args": [],
+            "options": {
+                "cwd": "${workspaceFolder}/build"
+            },
+            "group": {
+                "kind": "test",
+                "isDefault": true
+            }
+        },
+        {
+            "label": "build & run active file",
+            "type": "shell",
+            "dependsOrder": "sequence",
+            "dependsOn": ["build active file", "run active file"],
+            "group": {
+                "kind": "build",
+                "isDefault": true
+            }
+        }
+    ]
+}

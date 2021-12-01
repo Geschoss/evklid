@@ -5,7 +5,7 @@
 //  Created by Kolomnikov Pavel on 20.05.2021.
 //
 
-#include "shader.hpp"
+#include "shader.h"
 
 #include <string>
 #include <vector>
@@ -15,8 +15,8 @@
 #include <GL/glew.h>
 #include <GLFW/glfw3.h>
 
-#define LOCAL_FILE_DIR "./data/"
-#define GLOBAL_FILE_DIR "../data/"
+#define LOCAL_FILE_DIR "./src/data/"
+#define GLOBAL_FILE_DIR "../src/data/"
 
 const char *getChaderType(GLenum eShaderType)
 {

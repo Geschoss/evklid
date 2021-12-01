@@ -5,7 +5,7 @@
 //  Created by Kolomnikov Pavel on 16.06.2021.
 //
 
-#include "date.hpp"
+#include "date.h"
 #include <sys/time.h>
 
 unsigned long fgSystemTime(void) {

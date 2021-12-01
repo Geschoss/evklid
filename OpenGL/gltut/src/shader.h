@@ -5,8 +5,8 @@
 //  Created by Kolomnikov Pavel on 20.05.2021.
 //
 
-#ifndef shader_hpp
-#define shader_hpp
+#ifndef shader_h
+#define shader_h
 #include <string>
 #include <vector>
 
@@ -18,4 +18,4 @@ GLuint createShader(GLenum eShaderType, const std::string &strShaderFile);
 GLuint createProgram(const std::vector<GLuint> &shaderList);
 GLuint loadShaderFromFile(GLenum eShaderType, const std::string &strShaderFilename);
 
-#endif /* shader_hpp */
+#endif /* shader_h */
