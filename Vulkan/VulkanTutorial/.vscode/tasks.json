@@ -8,10 +8,12 @@
             "args": [
                 "-g",
                 "--std=c++17",
+                
+                "${workspaceFolder}/src/main.cpp",
+                
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}",
 
-                "${workspaceFolder}/src/*.cpp",
 
                 "-I/usr/local/include",
                 "-L/usr/local/lib",
@@ -37,10 +39,10 @@
         {
             "type": "shell",
             "label": "run active file",
-            "command": "ls && ../build/${fileBasenameNoExtension}",
+            "command": "./${fileBasenameNoExtension}",
             "args": [],
             "options": {
-                "cwd": "${fileDirname}"
+                "cwd": "${workspaceFolder}/build"
             },
             "group": {
                 "kind": "test",

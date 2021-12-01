@@ -4,6 +4,10 @@
         "string": "cpp",
         "iosfwd": "cpp",
         "vector": "cpp",
-        "thread": "cpp"
+        "thread": "cpp",
+        "ios": "cpp",
+        "istream": "cpp",
+        "locale": "cpp",
+        "ostream": "cpp"
     }
 }
