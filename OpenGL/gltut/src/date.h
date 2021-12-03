@@ -13,5 +13,4 @@
 unsigned long fgSystemTime(void);
 long fgElapsedTime(unsigned long startTime);
 
-
 #endif /* date_h */
