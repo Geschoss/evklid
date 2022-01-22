@@ -47,6 +47,8 @@ public:
     bool isPocketsFull() const { return m_iGoldCarried >= MAX_CURRY_NUGGETTS; }
 
     void increaseFatigue() { m_iFatigue += 1; };
+
+    bool isThirsty() const;
 };
 
 #endif

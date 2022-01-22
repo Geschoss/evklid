@@ -5,7 +5,7 @@ int BaseGameEntity::m_iNextValidID = 0;
 
 void BaseGameEntity::SetID(int val)
 {
-    // make sure the val is equal to or greater thna the next available ID
+    // make sure the val is equal to or greater then the next available ID
     assert((val >= m_iNextValidID) && "<BaseGameEntity::SetID>: invalid ID");
 
     m_ID = val;

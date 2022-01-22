@@ -1,7 +1,7 @@
-#ifndef MINER_STATES_H
-#define MINER_STATES_H
+#ifndef ENTER_MINER_AND_DIG_FOR_NUGGET_STATE_H
+#define ENTER_MINER_AND_DIG_FOR_NUGGET_STATE_H
 
-#include "State.h"
+#include "../State.h"
 
 class Miner;
 

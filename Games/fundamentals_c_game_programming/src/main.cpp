@@ -1,11 +1,9 @@
-#include <iostream>
-#include <string>
+#include <stdio.h>
+#include <assert.h>
+#include <math.h>
+#include <sys/time.h>
 
-int main(int argc, char *argv[])
+int main()
 {
-    std::string mystring;
-    std::cin >> mystring;
-    std::cout << "Hello " << mystring;
-
     return 0;
 }

@@ -34,3 +34,13 @@ void Miner::addToGoldCarried(const int val)
         m_iGoldCarried = 0;
     }
 }
+
+bool Miner::isThirsty() const
+{
+    if (m_iThirst >= MAX_THIRSTY_LEVEL)
+    {
+        return true;
+    }
+
+    return false;
+}

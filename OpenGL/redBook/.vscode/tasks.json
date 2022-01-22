@@ -8,18 +8,15 @@
             "args": [
                 "-g",
                 "--std=c++17",
-                
-                "${workspaceFolder}/src/main.cpp",
-                
+                "${relativeFile}",
+
                 "-o",
                 "${workspaceFolder}/build/${fileBasenameNoExtension}",
 
-
-                "-I/usr/local/include",
+                "-I/usr/local/include/GLFW",
                 "-L/usr/local/lib",
                 "-lglfw",
                 "-lglew",
-                "-lvulkan",
                 "-framework",
                 "Cocoa",
                 "-framework",

@@ -1,7 +1,11 @@
-#include "States.h"
-#include "Miner.h"
-#include "Locations.h"
-#include "EntityNames.h"
+#include "../Miner.h"
+#include "../Locations.h"
+#include "../EntityNames.h"
+
+#include "QuenchThirst.h"
+#include "VisitBankAndDepositGold.h"
+
+#include "EnterMineAndDigForNugget.h"
 
 #include <iostream>
 using namespace std;
@@ -42,6 +46,12 @@ void EnterMineAndDigForNugget::Execute(Miner *miner)
     // if enough gold mined, go and put it in the bank
     if (miner->isPocketsFull())
     {
-        // miner->ChangeState()
+        miner->ChangeState(VisitBankAndDepositGold::Instance());
+    }
+
+    // if thirsty go and get a whiskey
+    if (miner->isThirsty())
+    {
+        miner->ChangeState(QuenchThirst::Instance());
     }
 }
