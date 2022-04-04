@@ -3,19 +3,20 @@
         {
             "name": "Mac",
             "includePath": [
+                "${workspaceFolder}/engine/src/**",
                 "/usr/local/lib",
                 "/usr/local/include",
                 "/opt/homebrew/include",
                 "/opt/homebrew/lib"
             ],
-            "defines": [],
+            "defines": ["_DEBUG", "UNICODE", "_UNICODE", "KEXPORT"],
             "macFrameworkPath": [
                 "/Library/Developer/CommandLineTools/SDKs/MacOSX.sdk/System/Library/Frameworks",
                 "/usr/local/lib",
                 "/opt/homebrew/lib"
             ],
             "compilerPath": "/usr/bin/clang",
-            "cStandard": "c11",
+            "cStandard": "c17",
             "cppStandard": "c++17",
             "intelliSenseMode": "clang-arm64"
         }
