@@ -9,6 +9,9 @@
         "istream": "cpp",
         "locale": "cpp",
         "ostream": "cpp",
-        "test.h": "c"
+        "test.h": "c",
+        "logger.h": "c",
+        "stdarg.h": "c",
+        "asserts.h": "c"
     }
 }
