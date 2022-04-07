@@ -15,7 +15,7 @@ compilerFlags="-g -shared -fdeclspec -fPIC"
 # -Wall -Werror
 includeFlags="-Isrc -I/opt/homebrew/include -I/usr/local/include"
 # linkerFlags="-lvulkan -lxcb -lX11 -lX11-xcb -lxkbcommon -L/opt/homebrew/lib -L/usr/local/lib"
-linkerFlags="-lvulkan  -L/opt/homebrew/lib -L/usr/local/lib"
+linkerFlags="-lvulkan -lglfw  -L/opt/homebrew/lib -L/usr/local/lib"
 defines="-D_DEBUG -DKEXPORT"
 
 echo "Building $assembly..."

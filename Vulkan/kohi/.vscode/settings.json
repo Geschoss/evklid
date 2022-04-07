@@ -12,6 +12,8 @@
         "test.h": "c",
         "logger.h": "c",
         "stdarg.h": "c",
-        "asserts.h": "c"
+        "asserts.h": "c",
+        "glfw3.h": "c",
+        "platform.h": "c"
     }
 }
